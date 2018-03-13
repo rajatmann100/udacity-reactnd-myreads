@@ -42,6 +42,11 @@ body, .app {
 .bookshelf-books {
   text-align: center;
 }
+.bookshelf-count {
+  color: #ececec;
+  padding-left: 1em;
+  font-size: 0.5em;
+}
 
 .open-search {
   position: fixed;
@@ -59,6 +64,27 @@ body, .app {
   background-position: center;
   background-size: 28px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size: 0;
+}
+
+/* error handling section on main page */
+.error-message {
+  color: red;
+  background-color: pink;
+  display: block;
+  padding-left: 1em;
+  font-weight: 700;
+}
+.error-close-button {
+  float: right;
+  width: 25px;
+  height: 25px;
+  background-image: url('./icons/cancel-button.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2em;
+  color: red;
+  cursor: pointer;
   font-size: 0;
 }
 
@@ -101,6 +127,11 @@ body, .app {
 
 .search-books-results {
   padding: 80px 10px 20px;
+}
+
+.search-books-not-found {
+  color: red;
+  text-align: center;
 }
 
 /* books grid */
